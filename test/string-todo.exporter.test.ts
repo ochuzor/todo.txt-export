@@ -30,7 +30,7 @@ describe('StringTodoExporter:', () => {
         expect(result).toEqual('x close the deal\n(A) check the latest code');
     });
 
-    it('export: should export a list of two items', () => {
+    it('export: should export a list of three items', () => {
       const data = [{id: 1, text: 'x close the deal'}, 
         {id: 2, text: '(A) check the latest code'},
         {id: 3, text: '(C) practice for the test @home'}];
