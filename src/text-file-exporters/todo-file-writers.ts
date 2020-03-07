@@ -9,7 +9,10 @@ export interface ITextFileWriter {
 }
 
 export class TodoTextFileWriter implements ITodoFileWriter {
-    constructor(private filePath: string, private writer: ITextFileWriter = fs) {}
+    constructor(
+        private filePath: string,
+        private writer: ITextFileWriter = fs
+    ) {}
 
     write(data: string): void {
         this.writer.writeFileSync(this.filePath, data, 'utf8');

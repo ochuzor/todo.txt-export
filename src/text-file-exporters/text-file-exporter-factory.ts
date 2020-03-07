@@ -1,7 +1,7 @@
-import { TextFileExporter } from "./text-file-exporter";
-import { TodoTextFileWriter } from "./todo-file-writers";
-import {JsonTodoExporter} from "../string-format-exporters/json-todo.exporter";
-import {StringTodoExporter} from "../string-format-exporters/string-todo.exporter";
+import { TextFileExporter } from './text-file-exporter';
+import { TodoTextFileWriter } from './todo-file-writers';
+import { JsonTodoExporter } from '../string-format-exporters/json-todo.exporter';
+import { StringTodoExporter } from '../string-format-exporters/string-todo.exporter';
 
 export class TextFileExporterFactory {
     jsonExpoter(filePath: string): TextFileExporter {
