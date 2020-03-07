@@ -1,4 +1,4 @@
-import {UrlTodoExporter, IUrlTodo} from '../src/url-exporter';
+import { UrlTodoExporter, IUrlTodo } from '../src/url-exporter';
 
 describe('UrlTodoExporter:', () => {
     let Sut: UrlTodoExporter;
@@ -6,7 +6,7 @@ describe('UrlTodoExporter:', () => {
     const baseUrl = 'http://localhost';
     const mockHash = 'mock-hash-value';
     const mockEncoder = {
-        encode: jest.fn().mockReturnValue(mockHash)
+        encode: jest.fn().mockReturnValue(mockHash),
     };
     const mockData = [{ id: 1, text: 'x write some tests' }];
 
@@ -20,7 +20,7 @@ describe('UrlTodoExporter:', () => {
     });
 
     it('should return the right result', () => {
-        const expectedResult = {href: 'http://localhost/#mock-hash-value'}
+        const expectedResult = { href: 'http://localhost/#mock-hash-value' };
         expect(result).toEqual(expectedResult);
     });
 });

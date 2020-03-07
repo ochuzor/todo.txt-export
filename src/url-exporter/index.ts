@@ -8,9 +8,9 @@ export interface Encoder {
     encode(data: ITodoDoc[]): string;
 }
 
-export class UrlTodoExporter implements ITodoExporter<IUrlTodo>  {
+export class UrlTodoExporter implements ITodoExporter<IUrlTodo> {
     /**
-     * 
+     *
      * @param _baseUrl is the return from window.location.origin
      * @param _encoder is a converter from ITodo[] into a hash string
      */
