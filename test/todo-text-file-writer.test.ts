@@ -1,4 +1,4 @@
-import {TodoTextFileWriter} from '../src/text-file-exporters/todo-file-writers'
+import {TodoTextFileWriter} from '../src/text-file-exporters/todo-file-writers';
 
 describe('TodoTextFileWriter:', () => {
     const filePath = 'file-path';
