@@ -14,9 +14,8 @@ export class WebFileExporter implements ITodoExporter<void> {
         const text = this.stringExporter.export(lsTodos);
 
         const textBlob = new Blob([text], { type: 'text/plain' });
-        let downloadLink = document.createElement('a');
+        const downloadLink = document.createElement('a');
         downloadLink.download = this.fileName;
-        downloadLink.onclick = destroyClickedElement;
 
         if (window.webkitURL != null) {
             downloadLink.href = window.webkitURL.createObjectURL(textBlob);
@@ -24,6 +23,7 @@ export class WebFileExporter implements ITodoExporter<void> {
             downloadLink.href = window.URL.createObjectURL(textBlob);
             downloadLink.style.display = 'none';
             document.body.appendChild(downloadLink);
+            downloadLink.onclick = destroyClickedElement;
         }
 
         downloadLink.click();
