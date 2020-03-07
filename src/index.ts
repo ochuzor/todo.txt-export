@@ -1,3 +1,3 @@
 export * from './index.types';
-export * from './string-todo.exporter';
-export * from './json-todo.exporter';
+export * from './string-format-exporters'
+export * from './text-file-exporters';

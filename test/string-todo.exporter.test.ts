@@ -1,4 +1,4 @@
-import { StringTodoExporter } from '../src/string-todo.exporter';
+import { StringTodoExporter } from '../src/string-format-exporters/string-todo.exporter';
 
 describe('StringTodoExporter:', () => {
     let Sut: StringTodoExporter;

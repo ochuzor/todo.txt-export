@@ -1,4 +1,4 @@
-import { JsonTodoExporter } from '../src/json-todo.exporter';
+import { JsonTodoExporter } from '../src/string-format-exporters/json-todo.exporter';
 
 describe('JsonTodoExporter:', () => {
     let Sut: JsonTodoExporter;
